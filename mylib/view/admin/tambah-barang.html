@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/admin/css/home.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/admin/css/upload.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .custom-css-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #D9D9D9;">
+        <div class="container-fluid m-2 d-flex align-items-center">
+            <a class="navbar-brand">ADMIN</a>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg mb-3" style="background-color: #AC4949;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="pendataan-barang.html">Pendataan Barang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="tambah-barang.html">Tambah Barang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="form-container">
+        <form>
+            <div class="form">
+                <input type="text" name="judul" placeholder="Masukkan Judul" class="input">
+            </div>
+            <div class="form">
+                <input type="text" name="Penulis" placeholder="Masukkan Nama Penulis" class="input">
+            </div>
+            <div class="form">
+                <input type="text" name="penerbit" placeholder="Masukkan Nama Penerbit" class="input">
+            </div>
+            <div class="form">
+                <input  type="text" name="tahun-terbit" placeholder="Masukkan Tahun Terbit" class="input">
+            </div>
+            <div class="form">
+                <select class="input" name="Kategori">
+                    <option>Kategori 1</option>
+                    <option>Kategori 1</option>
+                    <option>Kategori 1</option>
+
+                </select>
+            </div>
+            <div class="form">
+                <textarea class="textarea" name="sinopsis" rows="4" cols="50" placeholder="Masukkan Sinopsis"></textarea>
+            </div>
+
+            <div class="form">
+                <label>Pilih Gambar Buku:</label>
+                <input  type="file" name="gambar" class="input">
+            </div>
+            <div class="form">
+                <input type="submit" value="publikasi" class="button">
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

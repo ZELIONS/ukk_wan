@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Buku</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/peminjam/css/detail-buku.css">
+</head>
+
+<body>
+    <a href="home.html" class="back-container">
+        <img src="../../back.png" class="back-logo">
+    </a>
+    <p class="judul">Judul Buku Ini</p>
+
+    <div class="container">
+        <!--Container atas-->
+        <div class="container-atas">
+            <img class="gambar" src="../../nikol.jpeg">
+            <div class="container-atas-tengah">
+                <p>Penulis:</p>
+                <p>Penerbit:</p>
+                <p>Tahun:</p>
+                <p>Kategori:</p>
+
+            </div>
+            <div class="container-atas-kanan">
+                <div class="rating-container">
+                    <p>7/10</p>
+                </div>
+                <button class="komentar-container" onclick="scrollToSection()">
+                    <img class="komentar-logo" src="../../comment.png">
+                    <p>1000</p>
+                </button>
+            </div>
+        </div>
+        <!--Container Tengah-->
+        <div class="container-tengah">
+            <div class="container-tengah-kiri">
+                <div class="container-tengah-kiri-konten">
+                    <button class="button-pinjam">Pinjam</button>
+                    <button class="button-tambah-favorit">Tambah ke Favorit</button>
+                </div>
+            </div>
+            
+            <div class="container-tengah-kanan">
+                <div class="sinopsis-container">
+                    <p id="myText" style="color: green;">Sinopsis adalah sebuah ringkasan atau penjelasan singkat
+                        mengenai cerita, acara, film, buku, Novel, dll. Ini memberikan-
+                        mbaran umum mengenai isi dan alur cerita sehingga penonto-
+                        n atau pembaca dapat memahami inti dari karya tersebut tan-
+                        pa harus membacanya atau menontonnya secara keselurahan.
+                        Sinopsis dapat mengacu pada: Wikipedia Sinopsis dapat mengacu pada: Wikipedia Sinopsis dapat
+                        mengacu pada: Wikipedia</p>
+                </div>
+                <form>
+                    <textarea class="ulasan" placeholder="Beri Ulasan" name="ulasan"></textarea>
+                    <p class="rating-text">Rating 1-10</p>
+                    <input type="number" class="rating" name="rating">
+                    <input type="submit" value="kirim" class="kirim-ulasan">
+                </form>
+            </div>
+        </div>
+        <section class="isi-ulasan-container" id="ulasan">
+            <div class="isi-ulasan">
+                <p class="ulasan-username">zelion.sm__</p>
+                <p class="ulasan-text">Sinopsis adalah sebuah ringkasan atau penjelasan singkat
+                    mengenai cerita, acara, film, buku, Novel, dll. Ini memberikan-
+                    mbaran umum mengenai isi dan alur cerita sehingga penonto-
+                    n atau pembaca dapat memahami inti dari karya tersebut tan-
+                    pa harus membacanya atau menontonnya secara keselurahan.
+                    Sinopsis dapat mengacu pada: Wikipedia Sinopsis dapat mengacu pada: Wikipedia Sinopsis dapat
+                    mengacu pada: Wikipedia </p>
+            </div>
+            <div class="isi-ulasan">
+                <p class="ulasan-username">zelion.sm__</p>
+                <p class="ulasan-text">Sinopsis adalah sebuah ringkasan atau penjelasan singkat
+                    mengenai cerita, acara, film, buku, Novel, dll. Ini memberikan-
+                    mbaran umum mengenai isi dan alur cerita sehingga penonto-
+                    n atau pembaca dapat memahami inti dari karya tersebut tan-
+                    pa harus membacanya atau menontonnya secara keselurahan.
+                    Sinopsis dapat mengacu pada: Wikipedia Sinopsis dapat mengacu pada: Wikipedia Sinopsis dapat
+                    mengacu pada: Wikipedia </p>
+            </div>
+            <div class="isi-ulasan">
+                <p class="ulasan-username">zelion.sm__</p>
+                <p class="ulasan-text">Sinopsis adalah sebuah ringkasan atau penjelasan singkat
+                    mengenai cerita, acara, film, buku, Novel, dll. Ini memberikan-
+                    mbaran umum mengenai isi dan alur cerita sehingga penonto-
+                    n atau pembaca dapat memahami inti dari karya tersebut tan-
+                    pa harus membacanya atau menontonnya secara keselurahan.
+                    Sinopsis dapat mengacu pada: Wikipedia Sinopsis dapat mengacu pada: Wikipedia Sinopsis dapat
+                    mengacu pada: Wikipedia Sinopsis adalah sebuah ringkasan atau penjelasan singkat
+                    mengenai cerita, acara, film, buku, Novel, dll. Ini memberikan-
+                    mbaran umum mengenai isi dan alur cerita sehingga penonto-
+                    n atau pembaca dapat memahami inti dari karya tersebut tan-
+                    pa harus membacanya atau menontonnya secara keselurahan.
+                    Sinopsis dapat mengacu pada: Wikipedia Sinopsis dapat mengacu pada: Wikipedia Sinopsis dapat
+                    mengacu pada: Wikipedia </p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function scrollToSection() {
+            // Menggunakan JavaScript untuk menggulirkan ke bagian kedua
+            document.getElementById('ulasan').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        var textElement = document.getElementById('myText');
+        var originalText = textElement.textContent;
+
+        if (originalText.length > 525) {
+            var truncatedText = originalText.substring(0, 525) + '...';
+            textElement.textContent = truncatedText;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+#myText{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container {
+    width: 100%;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: calc(33.33% - 10px);
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card-title {
+    width: 100%;
+    height: auto;
+    color: black;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-left: 10px;
+}
+
+.rating {
+    width: 100%;
+    height: 25px;
+    display: flex;
+}
+
+.rating-text {
+    width: 60px;
+    height: 100%;
+    background-color: rgb(229, 255, 0);
+    margin-left: auto;
+    border-radius: 8px;
+}
+
+.rating-text p {
+    text-align: center;
+    margin: 0;
+
+}
+
+.penulis-buku {
+    width: 50%;
+    height: 50px;
+}
+
+.penulis-buku p {
+    margin-top: 0;
+    color: black;
+    margin-left: 10px;
+
+}
+
+.gambar-container {
+    width: 100%;
+    height: 130px;
+    display: flex;
+}
+
+.gambar {
+    width: 35%;
+    height: 100%;
+    margin-left: auto;
+}
+
+.gambar-isi {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.tahun {
+    width: 100%;
+    height: 40px;
+    color: black;
+    display: flex;
+}
+
+.button {
+    margin-left: auto;
+    width: 70px;
+    height: 30px;
+    margin-top: auto;
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+}
+
+.tahun p {
+    margin-left: 10px;
+}
+
+.button:hover {
+    width: 72px;
+    height: 32px;
+    color: greenyellow;
+    color: white;
+}
+
+
+
+/* CSS lainnya di sini */
+
+.unggulan-container {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    position: relative;
+    background-color: #8596A5;
+
+}
+
+.prev-container,
+.next-container {
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.next-container {
+    right: 0;
+    left: auto;
+}
+
+.prev {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.next {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.unggulan-content-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.unggulan-card {
+    width: 18%;
+    height: 100%;
+    background-color: blueviolet;
+    margin-right: 2%;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.unggulan-card:last-child {
+    margin-right: 0;
+}
+
+#prevBtn,
+#nextBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+.unggulan-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    background-color: #d9d9d985;
+}
+
+@media screen and (max-width: 600px) {
+
+    .unggulan-card {
+        width: 48%;
+        margin-right: 0;
+    }
+
+    .unggulan-container {
+        height: 200px;
+    }
+
+    .prev {
+        width: 10px;
+        height: 10px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .next {
+        width: 10px;
+        height: 10px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
